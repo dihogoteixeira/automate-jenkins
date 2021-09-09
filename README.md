@@ -10,6 +10,8 @@ git clone https://github.com/dihogoteixeira/automate-jenkins.git
 cd automate-jenkins
 ```
 
+change value variable `dockerhub_user`on `setup-and-run.sh`
+
 ```sh
 sh setup-and-run.sh
 ```
