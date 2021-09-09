@@ -2,7 +2,7 @@
 
 jenkins_port=8080
 image_name=code-jenkins
-image_version=2.0.0
+image_version=v.2.0.0
 container_name=automation-jenkins
 dockerhub_user=dihogoteixeira
 
@@ -33,7 +33,7 @@ if [ ! -e $HOME/.ssh/.password ]; then
     echo "Br@s1l2021" > $HOME/.ssh/.password
 fi
 
-docker run -p ${jenkins_port}:8080 \
+docker run -dti -p ${jenkins_port}:8080 \
     -v `pwd`/downloads:/var/jenkins_home/downloads \
     -v `pwd`/jobs:/var/jenkins_home/jobs/ \
     -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ \
