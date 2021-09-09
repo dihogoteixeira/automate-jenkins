@@ -1,8 +1,8 @@
-FROM jenkins/jenkins:2.112
+FROM jenkins/jenkins:latest
 
 LABEL Author="Dihogo Cassimiro Teixeira" 
 
-ARG master_image_version="v.2.0.0"
+ARG master_image_version="v.1.0.0"
 ENV master_image_version $master_image_version
 
 USER jenkins

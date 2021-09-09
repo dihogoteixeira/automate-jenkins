@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 jenkins_port=8080
-image_name=slashicorp-jenkins
+image_name=code-jenkins
 image_version=2.0.0
 container_name=automation-jenkins
 dockerhub_user=dihogoteixeira
