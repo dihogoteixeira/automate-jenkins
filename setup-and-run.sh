@@ -33,7 +33,7 @@ if [ ! -e $HOME/.ssh/.password ]; then
     echo "Br@s1l2021" > $HOME/.ssh/.password
 fi
 
-docker run -dti -p ${jenkins_port}:8080 \
+docker run -p ${jenkins_port}:8080 \
     -v `pwd`/downloads:/var/jenkins_home/downloads \
     -v `pwd`/jobs:/var/jenkins_home/jobs/ \
     -v `pwd`/m2deps:/var/jenkins_home/.m2/repository/ \
