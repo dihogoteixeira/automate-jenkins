@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.263.1
+FROM jenkins/jenkins:2.112
 
 LABEL Author="Dihogo Cassimiro Teixeira" 
 
